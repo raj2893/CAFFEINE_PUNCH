@@ -160,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
     private void displayMessage(String message) {
         TextView priceTextView = (TextView) findViewById(R.id.payableamount);
         priceTextView.setTextSize(20);
+        priceTextView.setPadding(24, 8, 8,8);
         priceTextView.setText(message);
     }
     private void pricemessagechange(String ordersummary){

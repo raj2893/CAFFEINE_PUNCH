@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="ActionBarTitleColor">#3B2F2F</color>
+    <color name="light_brown">#553939</color>
+    <color name="ActionBarTitleColor">#472D2D</color>
 
 </resources>
