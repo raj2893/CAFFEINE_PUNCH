@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Caffeine Punch</string>
+    <string name="Name_Hint">Name</string>
 </resources>

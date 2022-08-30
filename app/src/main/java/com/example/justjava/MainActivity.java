@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.jar.Attributes;
+
 public class MainActivity extends AppCompatActivity {
     int quantity = 0;
 
@@ -103,25 +105,25 @@ public class MainActivity extends AppCompatActivity {
             if (addWhippedCream == true && addChocolate == true) {
 
                 double amount1 = price + (quantity*4);
-                String summary = "\nHello " + username +
+                String summary = "Hello " + username +
                         "\nIt will cost you $" + amount1
                         + ".\n$" + (quantity*4) + " is charged extra for the Whipped Cream and the Chocolate.\nThank You!";
 
                 return summary;
             } else if (addWhippedCream == true && addChocolate == false) {
                 double amount2 = ((price) + (quantity*2));
-                String summary = "\nHello " + username +
+                String summary = "Hello " + username +
                         "\nIt will cost you $" + amount2
                         + "\n$" + (quantity*2) + " is charged extra for the Whipped Cream.\nThank You!";
                 return summary;
             } else if (addWhippedCream == false && addChocolate == true) {
                 double amount3 = (price + (quantity*2));
-                String summary = "\nHello " + username +
+                String summary = "Hello " + username +
                         "\nIt will cost you $" + amount3
                         + "\n$" + (quantity*2) +  " is charged extra for the Chocolate.\nThank You!";
                 return summary;
             } else {
-                String summary = "\nHello " + username +
+                String summary = "Hello " + username +
                         "\nIt will cost you $" + calculateprice() +
                         "\nThank you!";
                 return summary;
@@ -143,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         ordersum.setText("PRICE");
         quantity = 0;
 
-        EditText name = (EditText) findViewById(R.id.UserNameInput);
+        EditText name = ((EditText) findViewById(R.id.UserNameInput));
         name.setText(" ");
 
         CheckBox check = (CheckBox) findViewById(R.id.checkBox);

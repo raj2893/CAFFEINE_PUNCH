@@ -25,10 +25,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payableamount"
-        app:layout_constraintVertical_bias="0.612">
+        app:layout_constraintVertical_bias="0.186">
 
         <Button
             android:id="@+id/button"
@@ -59,19 +59,16 @@
         android:id="@+id/textView2"
         android:layout_width="143dp"
         android:layout_height="wrap_content"
+        android:text="QUANTITY"
+        style="@style/CustomText"
         android:background="@drawable/border"
         android:backgroundTint="#EDEDED"
-        android:gravity="center"
-        android:padding="8sp"
-        android:text="QUANTITY"
-        android:textColor="#000000"
-        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.09" />
 
     <Button
         android:id="@+id/button3"
@@ -83,10 +80,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/quantity"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <Button
         android:id="@+id/button4"
@@ -98,20 +95,34 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toEndOf="@+id/quantity"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.089" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="143dp"
         android:layout_height="wrap_content"
+        android:text="Toppings"
+        style="@style/CustomText"
         android:background="@drawable/border"
         android:backgroundTint="#EDEDED"
-        android:padding="8sp"
-        android:text="Toppings"
-        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/checkBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -126,7 +137,6 @@
         android:background="@drawable/border"
         android:backgroundTint="#D7FDE4"
         android:padding="8sp"
-
         android:text="Whipped Cream"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -154,49 +164,44 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@style/CustomText"
         android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:background="@drawable/border"
         android:backgroundTint="#EDEDED"
-        android:gravity="center"
-        android:padding="8sp"
         android:text="Price"
-        android:textColor="#000000"
-        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.574" />
+        app:layout_constraintVertical_bias="0.547" />
+
+    <!--        app:layout_constraintBottom_toTopOf="@+id/linearLayout"--><![CDATA[
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    ]]>
 
     <TextView
         android:id="@+id/payableamount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
         android:text="$0"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.098" />
-
-    <TextView
-
-        android:id="@+id/quantity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="0"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/UserNameInput"
@@ -210,6 +215,6 @@
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
